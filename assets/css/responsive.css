@@ -1,0 +1,66 @@
+@media all and (max-width:1366px) {
+
+    /* .menu {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu ul {
+        padding: 0 15px;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--secondary-color4);
+        width: 100%;
+        
+    }
+
+    .nav-btn {
+        display: block;
+    } */
+
+    #about {
+        background: url('../images/about-bg2.svg') no-repeat right center / contain, url('../images/about-bg1.svg') no-repeat 5% center / contain;
+    }
+
+    .payment-methods img {
+        margin-right: 0px;
+    }
+}
+
+@media all and (max-width:1200px) {
+    h1 {
+        font-size: 61px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .banner-content p {
+        font-size: 20px;
+        line-height: 39px;
+    }
+
+    /* .about-content::after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 700px;
+        background-color: #F1F1F1;
+        top: 0;
+        left: 18px;
+        border-radius: 40px;
+        z-index: -1;
+    } */
+
+}
+
+@media all and (min-width:990px) {}
+
+@media all and (max-width:990px) {}
+
+@media all and (max-width:768px) {}
+
+@media all and (max-width:575px) {}
+
+@media all and (max-width:450px) {}

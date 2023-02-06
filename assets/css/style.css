@@ -1,0 +1,1204 @@
+/*
+Template Name: SaaSup;
+Template URI: https://github.com/razaizim1/;
+Author: Razai Zim;
+Author URI: https://github.com/razaizim1/
+
+Table of Content:
+1.
+2.
+3.
+4.
+5.
+*/
+
+/*****************************/
+/********* General Area *****/
+/*****************************/
+:root {
+  --primary-color1: #5236FF;
+  --primary-color2: #242331;
+  --secondary-color1: #F9F9F9;
+  --secondary-color2: #EFECFF;
+  --secondary-color3: #797979;
+  --secondary-color4: #FFFFFF;
+  --secondary-color5: #F4F4F4;
+  --secondary-color6: #D3D3D3;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color2);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 66px;
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 83px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--primary-color2);
+  line-height: 110%;
+  max-width: 580px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color2);
+  line-height: 33px;
+}
+
+h4 {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--primary-color2);
+  line-height: 44px;
+}
+
+h5 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color2);
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 157.4%;
+  color: var(--secondary-color3);
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 20px 45px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color2olor2);
+  background-color: var(--secondary-color4);
+  border-radius: 40px;
+  transition: .5s;
+}
+
+.btn-1:hover {
+  background: var(--primary-color2);
+  color: var(--secondary-color4);
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 20px 45px;
+  border: 2px solid var(--primary-color1);
+  border-radius: 40px;
+  background-color: var(--primary-color1);
+  color: var(--secondary-color4);
+  font-size: 18px;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+.btn-2:hover {
+  border-color: var(--primary-color1);
+  background-color: var(--secondary-color4);
+  color: var(--primary-color1)
+}
+
+.btn-3 {
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+.video-btn {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid var(--secondary-color5);
+  background-color: var(--secondary-color5);
+  transition: all .5s;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: var(--primary-color2);
+}
+
+
+.video-btn i {
+  font-size: 58px;
+  padding-left: 10px;
+  color: var(--primary-color2);
+}
+
+.video-btn:hover {
+  border-color: var(--secondary-color3);
+  background-color: var(--secondary-color4);
+  color: var(--primary-color2);
+}
+
+.subtitle {
+  display: inline-block;
+  padding: 20px 45px;
+  border-radius: 40px;
+  background-color: var(--secondary-color2);
+  color: var(--primary-color1);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.heading-padding {
+  padding-bottom: 45px;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  padding-top: 10px;
+  max-width: 650px;
+  margin: auto;
+}
+
+
+/*****************************/
+/********* 1. Heder Area *****/
+/*****************************/
+
+.header-section {
+  background: url(../images/background.png) no-repeat scroll bottom center / contain;
+}
+
+.header-area {
+  background: url(../images/banner-bg.svg) no-repeat scroll 130% 0 / 78%;
+  margin-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.menu {
+  background: rgba(255, 255, 255, .10);
+  border-radius: 40px;
+}
+
+.menu ul {
+  padding: 0 15px;
+}
+
+
+.menu ul li a,
+.menu ul li button {
+  display: block;
+  padding: 20px 17px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary-color4);
+  position: relative;
+}
+
+.menu ul ul li a {
+  background-color: var(--secondary-color4);
+  color: var(--primary-color2);
+  padding: 20px;
+  position: relative;
+
+}
+
+.menu ul li span{
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 1s cubic-bezier(0.04, 0, 0.1, 0.99);
+}
+
+
+
+.menu ul li span:hover::before{
+  transition: all .2s cubic-bezier(0.04, 0, 0.1, 0.99);
+  width: 100%;
+}
+
+.btn:first-child:hover, :not(.btn-check)+.btn:hover{
+  color: white;
+}
+
+.menu ul li a::before,.menu ul li span::before {
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  color: var(--primary-color2);
+  transition: all 1s cubic-bezier(0.04, 0, 0.1, 0.99);
+}
+
+.menu ul li a:hover:before{
+  width: 100%;
+}
+
+
+.menu ul li a i {
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.menu ul li a:hover,.menu ul li span:hover {
+  color: var(--primary-color2);
+  transition: all 1s ;
+}
+
+.menu ul ul {
+  padding: 0;
+  border-top: 4px solid var(--primary-color1);
+  overflow: hidden
+}
+
+.menu ul ul li a {
+  background-color: var(--secondary-color4);
+  color: var(--primary-color2);
+  padding: 20px;
+  transition: all 1s cubic-bezier(0.04, 0, 0.1, 0.99);
+}
+
+.menu ul ul li:hover > a {
+  color: var(--primary-color1);
+  margin-left: 10px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border: none;
+}
+
+.btn:first-child,
+:not(.btn-check)+.btn {
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-btn {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav-btn i {
+  font-size: 35px;
+  height: 63px;
+  width: 63px;
+  background-color: rgba(255, 255, 255, .10);
+  color: var(--secondary-color4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.banner-area {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.banner-content h1 {
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 25px;
+  line-height: 39px;
+}
+
+.banner-content ul li .btn-2 {
+  margin-right: 10px;
+}
+
+/* ANIMATION BOX */
+
+header {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: var(--primary-color1);
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+/*****************************/
+/******* 1. Feature Area *****/
+/*****************************/
+
+#features {
+  padding-bottom: 100px;
+}
+
+.feature-item img {
+  height: 250px;
+  width: auto;
+}
+
+#features h3 {
+  padding-top: 43px;
+  padding-bottom: 20px;
+  line-height: 33px;
+}
+
+#features .feature-item {
+  padding: 60px 30px;
+  border-radius: 50px;
+  transition: all .5s;
+}
+
+#features .feature-item:hover {
+  background-color: var(--secondary-color1);
+  transform: scale(1.02);
+}
+
+#features .feature-item:hover a {
+  color: var(--primary-color1);
+}
+
+/*****************************/
+/****** 3. About Section *****/
+/*****************************/
+
+#about {
+  background: url('../images/about-bg2.svg') no-repeat right center / contain, url('../images/about-bg1.svg') no-repeat 13% center / contain;
+}
+
+/* 
+.about-content::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 850px;
+  background-color: #F1F1F1;
+  top: 0;
+  left: 80px;
+  border-radius: 40px;
+  z-index: -1;
+} */
+
+.about-content h2 {
+  padding-bottom: 18px;
+}
+
+.about-content p {
+  padding-bottom: 10px;
+}
+
+/* 
+.about-img::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 400px;
+  border-radius: 40px;
+  background-color: var(--primary-color1);
+  top: 0;
+  right: -50px;
+  z-index: -1;
+} */
+
+#about .about-content i {
+  width: 96px;
+  height: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color1);
+  color: var(--secondary-color5);
+  font-size: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.cost-details p {
+  max-width: 390px;
+}
+
+/*****************************/
+/********* 4. Work Area ******/
+/*****************************/
+
+.work-content {
+  margin-top: -50px;
+}
+
+#work-tab {
+  margin-bottom: 80px;
+}
+
+#work-tab li button {
+  padding: 25px 50px;
+  border-radius: 20px;
+  background-color: var(--secondary-color1);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color2);
+  border: none;
+  transition: all .5s;
+  margin: 20px;
+}
+
+#work-tab li button:hover {
+  color: var(--primary-color1);
+}
+
+#work-tab li .active {
+  background-color: var(--primary-color1) !important;
+  color: var(--secondary-color4) !important;
+}
+
+.work-content-heading {
+  flex-wrap: wrap;
+}
+
+.work-content-heading i {
+  font-size: 50px;
+  height: 97px;
+  width: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdcff;
+  border-radius: 20px;
+  color: var(--primary-color1);
+  margin-right: 20px;
+}
+
+.work-content-heading h4 {
+  max-width: 400px;
+  margin-bottom: 0;
+}
+
+.work-content .btn-2 {
+  background-color: var(--primary-color2);
+  border-color: var(--primary-color2);
+}
+
+.work-content .btn-2:hover {
+  background-color: var(--secondary-color4);
+  border-color: var(--primary-color2);
+  color: var(--primary-color2);
+}
+
+.work-content p {
+  max-width: 580px;
+  padding-bottom: 10px;
+}
+
+.work-img img {
+  border-radius: 30px;
+}
+
+/*****************************/
+/**** 6. Testimonial Area ****/
+/*****************************/
+
+#testimonial {
+  background: url("../images/testimonial/testimonial-bg.svg") center center / cover no-repeat scroll;
+  padding-top: 160px;
+  padding-bottom: 140px;
+  z-index: -1;
+}
+
+#testimonial .subtitle {
+  background-color: #6850FF;
+  color: var(--secondary-color4);
+}
+
+.testimonial-heading h2 {
+  color: var(--secondary-color4);
+  max-width: 100%;
+  padding-bottom: 10px;
+}
+
+.testimonial-content .bxs-quote-alt-left {
+  font-size: 50px;
+  color: var(--secondary-color4);
+  padding-bottom: 30px;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  width: 83%;
+  margin: 0 auto;
+  font-size: 25px;
+  color: var(--secondary-color4);
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.testimonial-content img {
+  height: 108px;
+  width: 108px;
+  object-fit: contain;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.testimonial-content h4 {
+  color: var(--secondary-color4);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.testimonial-content span {
+  font-size: 20px;
+  color: var(--secondary-color4);
+  margin-bottom: 5px;
+}
+
+.testimonial-content .stars {
+  color: #FFB422;
+}
+
+.testimonial-content p {
+  position: relative;
+}
+
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+  position: absolute;
+  font-size: 30px;
+  color: var(--secondary-color4);
+  border-radius: 50%;
+  height: 76px;
+  width: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.testimonial-carousel .carousel-control-prev:hover,
+.testimonial-carousel .carousel-control-next:hover {
+  background: #6850FF;
+}
+
+/*****************************/
+/****** 6. Pricing Area ******/
+/*****************************/
+
+.pricing-heading h2 {
+  padding-bottom: 10px;
+}
+
+.pricing-heading h3 {
+  padding-bottom: 20px;
+}
+
+.payment-methods {
+  background-color: var(--secondary-color1);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-methods img {
+  width: 90px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 5px;
+  border-radius: 30px;
+}
+
+.pricing-table p b {
+  color: var(--primary-color2);
+}
+
+.pricing-package {
+  background-color: var(--secondary-color1);
+  margin: 10px;
+  border-radius: 30px;
+  padding: 50px 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.pricing-package .subtitle {
+  padding: 16px 21px;
+
+}
+
+.popular-package .subtitle {
+  background-color: var(--secondary-color4);
+  color: var(--secondary-color3);
+}
+
+.table-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-color6);
+  padding-bottom: 20px;
+}
+
+.table-head .btn-1 {
+  padding: 16px 21px;
+}
+
+.advance-package .table-head .btn-1 {
+  background-color: var(--secondary-color2);
+}
+
+.table-pricing {
+  border-bottom: 1px solid var(--secondary-color6);
+}
+
+.table-pricing h2 {
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.table-pricing span {
+  font-size: 20px;
+}
+
+.table-pricing-btn {
+  display: inline-block;
+  padding: 5px 28px;
+  border-radius: 40px;
+  background-color: #FFEECC;
+  color: #C68A15;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.advance-package p b {
+  font-weight: 700;
+  color: var(--primary-color1);
+  transition: all .5s;
+}
+
+.table-features ul {
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+
+.table-features ul li {
+  padding-bottom: 5px;
+}
+
+.table-features .btn-2 {
+  background: var(--secondary-color1);
+  border-color: #D3D3D3;
+  color: var(--primary-color2);
+}
+
+.table-features .btn-2:hover {
+  background-color: var(--primary-color1);
+  border-color: var(--primary-color1);
+  color: var(--secondary-color4);
+}
+
+.advance-package .btn-2 {
+  background-color: var(--primary-color2);
+  border: none;
+  color: var(--secondary-color4);
+}
+
+.advance-package .btn-2:hover {
+  background-color: var(--primary-color1);
+}
+
+/*****************************/
+/**** 6. Newsletter Area *****/
+/*****************************/
+
+#newsletter {
+  background: url(../images/newsletter1.svg) no-repeat scroll center center / contain;
+  margin: 100px 0;
+  padding: 45px 60px;
+}
+
+/* .newsletter-area {
+  padding: 45px 60px;
+} */
+
+.newsletter-content h2 {
+  color: var(--secondary-color4);
+  max-width: 577px;
+  padding-bottom: 10px;
+}
+
+.newsletter-content p {
+  color: var(--secondary-color4);
+  max-width: 480px;
+  padding-bottom: 10px;
+}
+
+.subscription-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.subscription-box .newsletter-input {
+  /* max-width: 380px; */
+  padding: 20px 45px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  caret-color: var(--secondary-color4);
+  border: none;
+  margin-bottom: 10px;
+}
+
+.subscription-box .newsletter-input::placeholder {
+  color: var(--secondary-color4);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subscription-box .newsletter-input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none
+}
+
+.subscription-box .btn-2 {
+  background-color: var(--secondary-color4);
+  border-color: var(--secondary-color4);
+  color: var(--primary-color2);
+  padding: 20px 34px;
+}
+
+.subscription-box .btn-2:hover {
+  border-color: var(--primary-color2);
+  background-color: var(--primary-color2);
+  color: var(--secondary-color4);
+}
+
+/*****************************/
+/******* 6. Blog Area ********/
+/*****************************/
+
+.blog-area {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.blog-heading h2 {
+  padding-bottom: 30px;
+}
+
+.blogs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* .blogs .blog-item {
+  margin-right: 50px;
+} */
+
+.blog-item {
+  padding: 40px;
+  background-color: var(--secondary-color1);
+  border-radius: 40px;
+  transition: all .5s;
+}
+
+
+.blog-img {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.blog-img img {
+  border-radius: 30px;
+}
+
+
+.blog-item .blog-buttons {
+  display: flex;
+  margin-bottom: -100px;
+  position: absolute;
+  bottom: 117px;
+  left: 20px;
+}
+
+.blog-item .blog-buttons .blog-btn1 {
+  margin-right: 15px;
+}
+
+.blog-item .blog-buttons .btn-2 {
+  padding: 15px 41px;
+  background-color: var(--secondary-color4);
+  color: var(--primary-color2);
+  border: none;
+}
+
+.blog-item .blog-buttons .btn-2:hover {
+  background-color: var(--primary-color1);
+  color: var(--secondary-color4);
+}
+
+.blog-item .blog-date {
+  font-size: 18px;
+}
+
+.blog-item h2 {
+  font-size: 40px;
+}
+
+.blog-item .btn-3 {
+  color: var(--primary-color1);
+}
+
+.blog-item:hover {
+  box-shadow: 0 2px 14px 0 rgb(0 0 0 / 11%);
+}
+
+.blog-item .btn-3:hover {
+  color: var(--primary-color2);
+}
+
+/*****************************/
+/******* 6. Footer Area ******/
+/*****************************/
+
+.footer-area {
+  padding-bottom: 80px;
+}
+
+.footer-left img {
+  padding-bottom: 20px;
+}
+
+.footer-left p {
+  max-width: 365px;
+  padding-bottom: 20px;
+}
+
+.footer-left ul li {
+  display: flex;
+  padding-bottom: 18px;
+}
+
+.footer-left .contact {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 157.4%;
+}
+
+.footer-left .contact a {
+  color: var(--secondary-color3);
+}
+
+.footer-left .contact a:hover {
+  color: var(--primary-color1);
+}
+
+.footer-left ul li i {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: var(--primary-color1);
+}
+
+.footer-menu .f-menu {
+  padding-right: 20px;
+}
+
+.footer-menu .f-menu h3 {
+  border-bottom: 1px solid #E3E3E3;
+  padding: 30px 0;
+}
+
+.footer-menu .f-menu a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--secondary-color3);
+  transition: all .3s;
+}
+
+.footer-menu .f-menu a:hover {
+  font-weight: 700;
+  color: var(--primary-color1);
+}
+
+.footer-download-area {
+  background-color: var(--secondary-color1);
+  padding: 60px 30px;
+  border-radius: 50px;
+}
+
+.footer-download-area .download-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color1);
+  padding-bottom: 15px;
+}
+
+.footer-download-area .download-btn:hover {
+  color: var(--primary-color2);
+}
+
+.footer-download-area h2 {
+  font-size: 30px;
+  max-width: 300px;
+}
+
+.footer-download-area p {
+  padding-bottom: 15px;
+}
+
+.footer-buttons {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-buttons .btn-2 {
+  padding: 18px 33px;
+  background-color: var(--primary-color2);
+  border-color: var(--primary-color2);
+  margin: 5px;
+  margin-left: 0px;
+}
+
+.footer-buttons .btn-2 i {
+  margin-right: 5px;
+}
+
+
+
+.footer-buttons .btn-2:hover {
+  background-color: var(--secondary-color4);
+  border-color: var(--primary-color2);
+  color: var(--primary-color2);
+}
+
+.copyright-area {
+  border-top: 1px solid #E3E3E3;
+  padding-top: 35px;
+}
+
+.copyright-area .icons i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.copyright-area .icons:last-child {
+  padding-right: 0px;
+}
+
+
+
+
+/* ************************************************
+*************** ABOUT US PAGE *********************
+************************************************ */
+
+/*****************************/
+/********* 1. Heder Area *****/
+/*****************************/
+
+.about-header-section {
+  padding-top: 60px;
+  background: url('../images/about/about-header.png') no-repeat scroll 0 0 / cover;
+}
+
+.about-header-section .menu {
+  background-color: var(--primary-color1);
+}
+
+.about-header-section .menu ul li a::before,.menu ul li span::before {
+  color: var(--primary-color2);
+}
+
+.about-header-section .menu ul li a,
+.about-header-section .menu ul li button {
+  color: var(--secondary-color4);
+}
+
+.about-header-section .menu ul li a:hover,
+.about-header-section .menu ul li button:hover {
+  color: var(--primary-color1);
+}
+
+.about-header-section .heading h2 {
+  padding-bottom: 15px;
+  margin: auto;
+}
+
+.about-header-section .heading p {
+  max-width: 610px;
+  margin: auto;
+  padding-bottom: 35px;
+}
+
+.banner-img {
+  padding-bottom: 80px;
+}
+
+.banner-img img {
+  border-radius: 30px;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+/*****************************/
+/******* 2. Counter Area *****/
+/*****************************/
+
+.counter-area {
+  padding: 90px 60px;
+  background-color: var(--secondary-color1);
+  border-radius: 50px;
+}
+
+.counter-area span {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--primary-color2);
+  line-height: 110%;
+}
+
+.counter-area .count {
+  color: var(--primary-color1);
+  padding-left: 10px;
+}
+
+.counter-area h3 {
+  font-size: 25px;
+}
+
+/*****************************/
+/******* 3. Mission Area *****/
+/*****************************/
+
+.mission-area h2 {
+  padding-bottom: 20px;
+}
+
+.mission-content p {
+  font-size: 19px;
+}
+
+.mission-img img {
+  border-radius: 40px;
+}
+
+/*****************************/
+/******* 3. Values Area ******/
+/*****************************/
+
+.value-section {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.value-section .section-title h2 {
+  max-width: 700px;
+}
+
+.value-section .values-wrap {
+
+  flex: 0 0 calc(100% - 80px);
+  flex-wrap: nowrap;
+}
+
+.value-section .single-value {
+  padding: 35px 20px;
+  background-color: var(--secondary-color1);
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.value-section .single-value .icon {
+  width: 125px;
+  height: 150px;
+  background-color: var(--primary-color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.value-section .single-value .content p {
+  max-width: 450px;
+}
+
+/*****************************/
+/******* 4. Career Area ******/
+/*****************************/
+
+.career-section .list-item {
+  padding: 60px;
+  border: 1px solid#CBCBCB;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.career-section .list-item .btn-2 {
+  background: transparent;
+  border-color: var(--primary-color2);
+  color: var(--primary-color2);
+}
+
+.career-section .list-item .btn-2:hover {
+  background-color: var(--primary-color2);
+  color: var(--secondary-color4);
+}
