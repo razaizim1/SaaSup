@@ -22,6 +22,7 @@
   <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/responsive.css" rel="stylesheet">
 
@@ -57,7 +58,8 @@
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span data-text="Pages">Pages</span></button>
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span
+                        data-text="Pages">Pages</span></button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#pricing-section" data-text="Pricing">Pricing</a></li>
                       <li><a class="dropdown-item" href="#" data-text="Integration">Integration</a></li>
@@ -85,7 +87,8 @@
               interdum ullamcorper sed pharetra sene.</p>
             <ul class="d-flex align-items-center">
               <li><a class="btn-2" href="#">Get Started</a></li>
-              <li><a class="video-btn" href="#">Watch Video<i class="fa-solid fa-circle-play"></i></a></li>
+              <li><a class="video-btn youtube-popup" href="https://www.youtube.com/watch?v=iCuUE4eRFns">Watch Video<i
+                    class="fa-solid fa-circle-play"></i></a></li>
             </ul>
           </div>
           <div class="col-md-7 banner-img">
@@ -96,6 +99,7 @@
     </div>
   </header>
   <!-- START HEADER SECTION -->
+
 
   <!-- START FEATURES SECTION -->
   <section id="features" class="text-center">
@@ -134,7 +138,7 @@
 
 
   <!-- START ABOUT SECTION -->
-  <section id="about" class="section-padding">
+  <section id="about">
     <div class="container">
       <div class="row about align-items-center">
         <div class="col-md-6 about-content">
@@ -158,103 +162,108 @@
   <!-- END ABOUT SECTION -->
 
 
-  <!-- START WORK SECTION -->
-  <section id="work" class="section-padding">
+  <!-- Start Work Section  -->
+  <section class="work-area section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="section-title">
             <p class="subtitle">How It Work</p>
-            <h2 class="heading-padding">Work smarter <br> with easy access for user..</h2>
+            <h2 class="heading-padding">Work smarter with easy access for user..</h2>
           </div>
         </div>
       </div>
-      <div class="row work-content">
+
+      <div class="row">
         <div class="col-md-12">
-          <ul class="nav nav-pills justify-content-center" id="work-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="create-account-tab" data-bs-toggle="pill"
-                data-bs-target="#create-account" type="button" role="tab" aria-controls="create-account-home"
-                aria-selected="true">01. Create account</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="install-tab" data-bs-toggle="pill" data-bs-target="#install-tracking"
-                type="button" role="tab" aria-controls="install-tracking" aria-selected="false">02. Install tracking
-                code</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="track-tab" data-bs-toggle="pill" data-bs-target="#track-analytics"
-                type="button" role="tab" aria-controls="track-analytics" aria-selected="false">03. Track
-                analytics</button>
-            </li>
+          <div class="work-smarter-tabs">
+            <ul class="nav nav-pills" id="work-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="account-tab" data-bs-toggle="pill"
+                  data-bs-target="#create-account-content" type="button" role="tab">01. Create account</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="install-tab" data-bs-toggle="pill" data-bs-target="#install-content"
+                  type="button" role="tab">02. Install tracking code</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="track-tab" data-bs-toggle="pill" data-bs-target="#track-content"
+                  type="button" role="tab">03. Track analytics</button>
+              </li>
+            </ul>
 
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="create-account" role="tabpanel" aria-labelledby="pills-home-tab"
-              tabindex="0">
-              <div class="row create-account-content">
-                <div class="col-md-6 mb-5">
-                  <div class="work-content">
-                    <div class="work-content-heading d-flex align-items-center mb-4">
-                      <i class="fa-solid fa-circle-user"></i>
-                      <h4>Create your account & start your work</h4>
+            <div class="tab-content" id="work-tabContent">
+              <div class="tab-pane fade show active" id="create-account-content" role="tabpanel" tabindex="0">
+                <div class="tabs-content">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="work-left">
+                        <div class="work-icon d-flex align-items-center">
+                          <i class="fa-solid fa-user"></i>
+                          <h3>Create your account & start your work</h3>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                          page from when looking at it layout. The point of using Lorem Ipsum</p>
+                        <a href="#" class="btn-1">Get Started</a>
+                      </div>
                     </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable
-                      content of a page from when looking at it layout. The point of using Lorem Ipsum</p>
-                    <a class="btn-2" href="#">Get Started</a>
+                    <div class="col-md-6">
+                      <img src="assets/images/work-img.svg" alt="work">
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 work-img">
-                  <img src="assets/images/work-img.svg" alt="Work Image">
-                </div>
               </div>
-            </div>
 
-            <div class="tab-pane fade" id="install-tracking" role="tabpanel" aria-labelledby="install-tracking-tab"
-              tabindex="0">
-              <div class="row install-tracking-content">
-                <div class="col-md-6 mb-5">
-                  <div class="work-content">
-                    <div class="work-content-heading d-flex align-items-center mb-4">
-                      <i class="fa-solid fa-circle-user"></i>
-                      <h4>Install the code to organize the works</h4>
+              <div class="tab-pane fade" id="install-content" role="tabpanel" tabindex="0">
+                <div class="tabs-content">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="work-left">
+                        <div class="work-icon d-flex align-items-center">
+                          <i class="fa-solid fa-user"></i>
+                          <h3>Create your account & start your work</h3>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                          page from when looking at it layout. The point of using Lorem Ipsum</p>
+                        <a href="#" class="btn-1">Get Started</a>
+                      </div>
                     </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable
-                      content of a page from when looking at it layout. The point of using Lorem Ipsum</p>
-                    <a class="btn-2" href="#">Get Started</a>
+                    <div class="col-md-6">
+                      <img src="assets/images/work-img2.png" alt="work">
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 work-img">
-                  <img src="assets/images/work-img2.png" alt="Work Image">
-                </div>
               </div>
-            </div>
 
-            <div class="tab-pane fade" id="track-analytics" role="tabpanel" aria-labelledby="track-tab" tabindex="0">
-              <div class="row track-analytics-content">
-                <div class="col-md-6  mb-5">
-                  <div class="work-content">
-                    <div class="work-content-heading d-flex align-items-center mb-4">
-                      <i class="fa-solid fa-circle-user"></i>
-                      <h4>Get a free marketing automation guide</h4>
+              <div class="tab-pane fade" id="track-content" role="tabpanel" tabindex="0">
+                <div class="tabs-content">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="work-left">
+                        <div class="work-icon d-flex align-items-center">
+                          <i class="fa-solid fa-user"></i>
+                          <h3>Create your account & start your work</h3>
+                        </div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                          page from when looking at it layout. The point of using Lorem Ipsum</p>
+                        <a href="#" class="btn-1">Get Started</a>
+                      </div>
                     </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable
-                      content of a page from when looking at it layout. The point of using Lorem Ipsum</p>
-                    <a class="btn-2" href="#">Get Started</a>
+                    <div class="col-md-6">
+                      <img src="assets/images/work-img3.png" alt="work">
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 work-img">
-                  <img src="assets/images/work-img3.png" alt="Work Image">
-                </div>
               </div>
+
             </div>
+
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
-  <!-- END WORK SECTION -->
+  <!-- End Work Section  -->
 
 
   <!-- START TESTIMONIAL SECTION -->
@@ -457,17 +466,15 @@
   <!--START NEWSLETTER SECTION -->
   <section id="newsletter">
     <div class="container">
-      <div class="row align-items-center newsletter-area">
+      <div class="row newsletter-area align-items-center ">
         <div class="col-md-6 newsletter-content">
           <h2>Start your free trail today</h2>
           <p>It is a long established fact that a reader will be by the readable when looking at it layout. </p>
           <div class="row subscription-box">
-            <div class="col-md-7">
-              <input class="form-control newsletter-input" type="email" placeholder="your email here...">
-            </div>
-            <div class="col-md-5">
-              <a class="btn-2" href="#">Get Started</a>
-            </div>
+            <form action="" method="POST">
+              <input type="email" name="email" placeholder="your mail here...">
+              <input class="btn-2" type="submit" value="Get Started">
+            </form>
           </div>
         </div>
 
@@ -482,18 +489,18 @@
   <!--START BLOG SECTION -->
   <section id="blog">
     <div class="container">
-      <div class="blog-area section-padding">
-        <div class="row">
-          <div class="col-md-12 text-center blog-heading">
-            <div class="section-title">
-              <p class="subtitle">Blog</p>
-              <h2>Most popular articles</h2>
-            </div>
+      <div class="row">
+        <div class="col-md-12 text-center blog-heading">
+          <div class="section-title">
+            <p class="subtitle">Blog</p>
+            <h2>Most popular articles</h2>
           </div>
         </div>
+      </div>
 
-        <div class="row blogs gap-5">
-          <div class="col-md-6 blog-item">
+      <div class="row blogs">
+        <div class="col-md-6">
+          <div class="blog-item">
             <div class="blog-img">
               <img src="assets/images/blog/1.svg" alt="Blog">
               <div class="blog-buttons">
@@ -501,36 +508,48 @@
                 <a class="btn-2 blog-btn2" href="#">Analysis</a>
               </div>
             </div>
-            <p class="blog-date">November 15, 2022</p>
-            <h2>10 Top tips for making your Saas product sticky</h2>
-            <p class="blog-description">It is a long established fact that a reader will be distracted by the readable
-              content of a page from when
-              looking at it layout. The point of using Lorem Ipsum</p>
-            <a class="btn-3" href="#">Read More</a>
+            <div class="blog-content">
+              <p class="blog-date">November 15, 2022</p>
+              <a href="#">
+                <h2>10 Top tips for making your Saas product sticky</h2>
+              </a>
+              <p class="blog-description">It is a long established fact that a reader will be distracted by the readable
+                content of a page from when
+                looking at it layout. The point of using Lorem Ipsum</p>
+              <a class="btn-3" href="#">Read More</a>
+            </div>
           </div>
-          <div class="col-md-6 blog-item">
+        </div>
+
+        <div class="col-md-6">
+          <div class="blog-item">
             <div class="blog-img">
-              <img src="assets/images/blog/2.svg" alt="Blog">
+              <img src="assets/images/blog/1.svg" alt="Blog">
               <div class="blog-buttons">
                 <a class="btn-2 blog-btn1" href="#">Marketing</a>
                 <a class="btn-2 blog-btn2" href="#">Analysis</a>
               </div>
             </div>
-            <p class="blog-date">November 15, 2022</p>
-            <h2>10 Top tips for making your Saas product sticky</h2>
-            <p class="blog-description">It is a long established fact that a reader will be distracted by the readable
-              content of a page from when
-              looking at it layout. The point of using Lorem Ipsum</p>
-            <a class="btn-3" href="#">Read More</a>
+            <div class="blog-content">
+              <p class="blog-date">November 15, 2022</p>
+              <a href="#">
+                <h2>10 Top tips for making your Saas product sticky</h2>
+              </a>
+              <p class="blog-description">It is a long established fact that a reader will be distracted by the readable
+                content of a page from when
+                looking at it layout. The point of using Lorem Ipsum</p>
+              <a class="btn-3" href="#">Read More</a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
   <!--END BLOG SECTION -->
 
   <!--START FOOTER SECTION -->
-  <section id="footer" class="section-padding">
+  <section id="footer">
     <div class="container">
       <div class="row footer-area">
         <div class="col-md-4 footer-left">
@@ -587,14 +606,14 @@
           <h2>Its suitable to all devices and screens</h2>
           <p>It is a long established fact that a reader will be distracted layout.</p>
           <div class="footer-buttons d-flex align-items-center">
-            <a class="btn-2 f-btn1" href="#"><i class="fa-brands fa-apple"></i> App Store</a>
-            <a class="btn-2" href="#"><i class="fa-brands fa-android"></i> Play Store</a>
+            <a class="btn-2" href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+            <a class="btn-2 f-btn2" href="#"><i class="fa-brands fa-android"></i> Play Store</a>
           </div>
         </div>
       </div>
 
       <div class="row align-items-center copyright-area">
-        <div class="col-md-6">
+        <div class="col-md-6 copyright-text">
           <p>Copyright &copy; SaaSup | Designed by Razai Zim</p>
         </div>
         <div class="col-md-6 text-end icons">
@@ -618,16 +637,15 @@
   </footer>
 
   <!-- JavaScript Libraries -->
-  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-3.6.3.min.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-  <!-- <script src="assets/js/isotope.pkgd.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
-    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="assets/js/scripts.js"></script>
 </body>
 
