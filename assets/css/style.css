@@ -24,6 +24,7 @@ Table of Content:
   --secondary-color4: #FFFFFF;
   --secondary-color5: #F4F4F4;
   --secondary-color6: #D3D3D3;
+  --border-color: #E3E3E3;
 }
 
 body {
@@ -123,15 +124,20 @@ p {
 }
 
 .btn-3 {
+  display: inline-block;
   text-decoration: underline;
   font-size: 18px;
   font-weight: 700;
   transition: all .5s;
 }
 
+.btn-3:hover {
+  color: var(--primary-color1);
+}
+
 .video-btn {
   display: inline-block;
-  padding: 4px 8px;
+  padding: 5px 8px;
   font-size: 18px;
   font-weight: 700;
   border: 1px solid var(--secondary-color5);
@@ -175,6 +181,10 @@ p {
   padding: 170px 0;
 }
 
+.about-section-padding {
+  padding: 120px 0;
+}
+
 .section-title {
   text-align: center;
   margin-bottom: 60px;
@@ -202,9 +212,37 @@ p {
   padding-bottom: 40px;
 }
 
+.header-area .banner-area .btn-2 {
+  margin-right: 15px;
+}
+
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.nav-btn i {
+  font-size: 35px;
+  background-color: var(--primary-color1);
+  color: var(--secondary-color4);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 15px;
+  margin-left: 30px;
+}
+
 .menu {
-  background: rgba(255, 255, 255, .10);
+  background: var(--secondary-color1);
   border-radius: 40px;
+}
+
+.menus {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-btn {
+  margin-left: 30px;
 }
 
 .menu ul {
@@ -218,16 +256,16 @@ p {
   padding: 20px 17px;
   font-size: 18px;
   font-weight: 500;
-  color: var(--secondary-color4);
+  color: var(--primary-color1);
   position: relative;
 }
 
 .menu ul ul li a {
   background-color: var(--secondary-color4);
-  color: var(--primary-color2);
+  color: var(--border-color);
   padding: 20px;
   position: relative;
-
+  transition: all 1s cubic-bezier(0.04, 0, 0.1, 0.99);
 }
 
 .menu ul li span {
@@ -246,7 +284,7 @@ p {
 
 .btn:first-child:hover,
 :not(.btn-check)+.btn:hover {
-  color: white;
+  color: var(--primary-color2);
 }
 
 .menu ul li a::before,
@@ -281,13 +319,6 @@ p {
   overflow: hidden
 }
 
-.menu ul ul li a {
-  background-color: var(--secondary-color4);
-  color: var(--primary-color2);
-  padding: 20px;
-  transition: all 1s cubic-bezier(0.04, 0, 0.1, 0.99);
-}
-
 .menu ul ul li:hover>a {
   color: var(--primary-color1);
   margin-left: 10px;
@@ -314,46 +345,34 @@ p {
   font-weight: 500;
 }
 
-.menu-btn {
+/* .menu-btn {
   margin-left: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.nav-btn {
+/* .nav-btn {
   display: none;
-}
+} */
 
-.nav-btn i {
-  font-size: 35px;
-  height: 63px;
-  width: 63px;
-  background-color: rgba(255, 255, 255, .10);
-  color: var(--secondary-color4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-}
 
+
+.common-header-area .banner-area,
 .banner-area {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 150px;
 }
 
-.banner-content h1 {
+.common-header-area .banner-content h1 {
   margin-bottom: 15px;
 }
 
-.banner-content p {
+.common-header-area .banner-content p {
   font-size: 25px;
   line-height: 39px;
 }
 
-.banner-content ul li .btn-2 {
+.common-header-area .banner-content ul li .btn-2 {
   margin-right: 10px;
 }
 
@@ -377,33 +396,35 @@ header {
 /******* 1. Feature Area *****/
 /*****************************/
 
-#features {
+.features-area {
   padding-bottom: 150px;
 }
 
-.feature-item img {
-  height: 250px;
-  width: auto;
-}
-
-#features h3 {
-  padding-top: 43px;
-  padding-bottom: 20px;
-  line-height: 33px;
-}
-
-#features .feature-item {
+.features-area .feature-item {
   padding: 60px 30px;
   border-radius: 50px;
   transition: all .5s;
 }
 
-#features .feature-item:hover {
+.features-area .feature-item img {
+  height: 250px;
+  width: auto;
+}
+
+.features-area .feature-item h3 {
+  padding-top: 43px;
+  padding-bottom: 20px;
+  line-height: 33px;
+}
+
+.features-area .feature-item p {}
+
+.features-area .feature-item:hover {
   background-color: var(--secondary-color1);
   transform: scale(1.02);
 }
 
-#features .feature-item:hover a {
+.features-area .feature-item:hover a {
   color: var(--primary-color1);
 }
 
@@ -528,7 +549,7 @@ header {
 
 .work-left>p {
   margin-bottom: 30px;
-  width: 540px;
+  max-width: 540px;
 }
 
 .work-icon {
@@ -773,7 +794,7 @@ header {
 /*****************************/
 
 
-#newsletter {
+.newsletter-section {
   background: url("../images/newsletter-bg2.svg") center top / cover no-repeat scroll;
   padding-bottom: 85%;
 }
@@ -891,7 +912,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 170px;
 }
 
@@ -943,6 +964,7 @@ header {
 
 .blog-item h2 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .blog-item .btn-3 {
@@ -985,7 +1007,7 @@ header {
 
 .footer-left .contact {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 157.4%;
 }
 
@@ -1009,14 +1031,14 @@ header {
 }
 
 .footer-menu .f-menu h3 {
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 30px;
 }
 
 .footer-menu .f-menu a {
   display: inline-block;
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--secondary-color3);
   transition: all .3s;
@@ -1039,10 +1061,6 @@ header {
   font-weight: 700;
   color: var(--primary-color1);
   padding-bottom: 15px;
-}
-
-.footer-download-area .download-btn:hover {
-  color: var(--primary-color2);
 }
 
 .footer-download-area h2 {
@@ -1092,7 +1110,7 @@ header {
 }
 
 .copyright-area {
-  border-top: 1px solid #E3E3E3;
+  border-top: 1px solid var(--border-color);
   padding: 20px 0;
 }
 
@@ -1128,37 +1146,36 @@ header {
 /********* 1. Heder Area *****/
 /*****************************/
 
-.about-header-section {
+.common-header-section {
   padding-top: 60px;
-  background: url('../images/about/about-header.png') no-repeat scroll 0 0 / cover;
+  background: url('../images/about/about-header.png') no-repeat scroll center center / cover;
 }
 
-.about-header-section .menu {
+.common-header-section .menu {
   background-color: var(--primary-color1);
 }
 
-.about-header-section .menu ul li a::before,
-.menu ul li span::before {
+.common-header-section .menu ul li a::before {
   color: var(--primary-color2);
 }
 
-.about-header-section .menu ul li a,
-.about-header-section .menu ul li button {
-  color: var(--secondary-color4);
+/* .common-header-section .menu ul li a,
+.common-header-section .menu ul li button {
+  color: var(--border-color);
+} */
+
+.common-header-section .menu ul li a:hover,
+.common-header-section .menu ul li button:hover {
+  color: var(--primary-color2);
 }
 
-.about-header-section .menu ul li a:hover,
-.about-header-section .menu ul li button:hover {
-  color: var(--primary-color1);
-}
-
-.about-header-section .heading h2 {
+.common-header-section .heading h2 {
   padding-bottom: 15px;
   margin: auto;
 }
 
-.about-header-section .heading p {
-  max-width: 610px;
+.common-header-section .heading p {
+  max-width: 550px;
   margin: auto;
   padding-bottom: 35px;
 }
@@ -1199,6 +1216,7 @@ header {
 
 .counter-area h3 {
   font-size: 25px;
+  padding-top: 5px;
 }
 
 /*****************************/
@@ -1222,7 +1240,11 @@ header {
 /*****************************/
 
 .value-section {
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.values-area {
+  margin-top: -45px;
 }
 
 .value-section .section-title h2 {
@@ -1238,7 +1260,7 @@ header {
 .value-section .single-value {
   padding: 35px 20px;
   background-color: var(--secondary-color1);
-  margin: 20px;
+  margin: 20px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1247,7 +1269,7 @@ header {
 
 .value-section .single-value .icon {
   width: 125px;
-  height: 150px;
+  height: 160px;
   background-color: var(--primary-color1);
   display: flex;
   justify-content: center;
@@ -1256,19 +1278,58 @@ header {
 }
 
 .value-section .single-value .content p {
-  max-width: 450px;
+  max-width: 400px;
+  margin-bottom: 0;
 }
 
 /*****************************/
 /******* 4. Career Area ******/
 /*****************************/
 
+
+
+.career-section .section-title {
+  text-align: start;
+}
+
+.career-section .career-area {
+  border-bottom: 1px solid var(--border-color);
+  padding: 170px 0;
+}
+
+.career-section .section-title {
+  max-width: 480px;
+}
+
+.career-section .subtitle {
+  margin-top: 50px;
+}
+
 .career-section .list-item {
-  padding: 60px;
+  padding: 55px;
   border: 1px solid#CBCBCB;
   border-radius: 30px;
   margin-bottom: 30px;
 }
+
+.career-section .list-item .job-details {
+  font-size: 18px;
+  color: var(--primary-color2);
+}
+
+.career-section .list-item .separator {
+  margin: 0px 5px;
+}
+
+.career-section .list-item .job-time {
+  color: var(--primary-color1);
+}
+
+.career-section .list-item .job-description {
+  max-width: 540px;
+  margin-bottom: 25px;
+}
+
 
 .career-section .list-item .btn-2 {
   background: transparent;
@@ -1279,4 +1340,230 @@ header {
 .career-section .list-item .btn-2:hover {
   background-color: var(--primary-color2);
   color: var(--secondary-color4);
+}
+
+.career-section .list-item .career-btn {
+  background-color: var(--primary-color2);
+  color: var(--secondary-color4);
+}
+
+.career-section .list-item .career-btn:hover {
+  background-color: var(--primary-color1);
+}
+
+.career-section .job-find {
+  background-color: var(--primary-color1);
+  color: var(--secondary-color4);
+}
+
+.career-section .job-find h3 {
+  padding-bottom: 15px;
+}
+
+.career-section .job-find h3,
+.career-section .job-find p {
+  color: var(--secondary-color4);
+}
+
+.career-section .job-find p {
+  max-width: 585px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.career-section .job-find .btn-2 {
+  background-color: var(--secondary-color4);
+  border: none;
+}
+
+/* ************************************************
+*************** FEATURES PAGE *********************
+************************************************ */
+
+/*****************************/
+/******* Features Area ******/
+/***************************/
+
+.features-home {
+  padding-top: 150px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.features-home .banner-area {
+  padding-top: 0;
+}
+
+.features-home .heading {
+  padding-bottom: 150px;
+}
+
+/*****************************/
+/***** Integration Area *****/
+/***************************/
+
+.integration-section {
+  padding-top: 150px;
+}
+
+.integration-section .section-title h2 {
+  max-width: 525px;
+}
+
+
+/******************************/
+/*** Features Footer Area ****/
+/****************************/
+
+.features-footer .footer-area {
+  border-top: 1px solid var(--border-color);
+  padding-top: 170px;
+}
+
+/* ************************************************
+*************** INTEGRATION PAGE ******************
+************************************************ */
+
+
+/*****************************/
+/**** INTEGRATION HEADER ****/
+/***************************/
+
+.integration-item {
+  background-color: var(--secondary-color1);
+  padding: 35px;
+  border-radius: 30px;
+  margin: 20px 10px;
+}
+
+.integration-item .integration-social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.integration-item .content p,
+.integration-item .content .btn-3 {
+  margin-bottom: 25px;
+}
+
+.integration-social i {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: var(--secondary-color4);
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.integration-item h5,
+.integration-item p {
+  margin: 0;
+}
+
+.integration-item h5:hover {
+  color: var(--primary-color1);
+}
+
+.integration-social .fa-facebook-f {
+  background: #5571FF;
+}
+
+.integration-social .fa-twitter {
+  background: #1DA1F2;
+}
+
+.integration-social .fa-youtube {
+  background: #FF2F2F;
+}
+
+.integration-social .fa-pinterest {
+  background: #B7081B;
+}
+
+.integration-social .fa-twitch {
+  background: #A83AFF;
+}
+
+.integration-social .fa-snapchat {
+  background: #F4F21F;
+}
+
+/* ************************************************
+************ SINGLE INTEGRATION PAGE **************
+************************************************ */
+
+/*****************************/
+/******** HEADER ************/
+/***************************/
+
+.single-integration .integration-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.single-integration .integration-social h1 {
+  margin-bottom: 0;
+}
+
+.single-integration-area {
+  padding: 100px 200px;
+  background-color: var(--secondary-color1);
+  border-radius: 30px;
+}
+
+.single-integration-area .single-integration-content p {
+  margin-bottom: 30px;
+}
+
+.single-integration-area .single-integration-image {
+  margin-bottom: 40px;
+}
+
+.single-integration-area .top h2 {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.single-integration-area .bottom h2 {
+  max-width: 100%;
+  font-size: 30px;
+}
+
+.single-integration-area .btn-2 {
+  border: none;
+}
+
+.single-integration-area .btn-2:hover {
+  background: var(--primary-color2);
+  color: var(--secondary-color4);
+  border: none;
+}
+
+.single-integration-area .fb-btn {
+  background: #5571FF;
+}
+
+.single-integration-area .twitter-btn {
+  background: #1DA1F2;
+}
+
+.single-integration-area .youtube-btn {
+  background: #FF2F2F;
+}
+
+.single-integration-area .pinterest-btn {
+  background: #B7081B;
+}
+
+.single-integration-area .twitch-btn {
+  background: #A83AFF;
+}
+
+.single-integration-area .snapchat-btn {
+  background: #F4F21F;
 }
