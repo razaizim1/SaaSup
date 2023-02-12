@@ -45,6 +45,16 @@
     .table-head {
         flex-direction: column;
     }
+
+    /* INTEGRATION PAGE */
+
+    .integration-item {
+        padding: 25px;
+    }
+
+    .integration-item h5 {
+        font-size: 22px;
+    }
 }
 
 @media all and (min-width:990px) {
@@ -62,7 +72,6 @@
     .header-area {
         background: none;
     }
-
 
     .menus {
         position: absolute;
@@ -206,6 +215,72 @@
         font-size: 16px;
     }
 
+    /* ABOUT PAGE */
+    .banner-img img {
+        margin-bottom: 30px;
+    }
+
+    .count-box {
+        padding: 20px 0;
+    }
+
+    .career-section .career-area {
+        padding: 50px 0;
+    }
+
+    /* FEATURES PAGE */
+    .features-home {
+        padding-top: 70px;
+    }
+
+    .features-home .heading {
+        padding-bottom: 70px;
+    }
+
+    .integration-section {
+        padding-top: 60px;
+    }
+
+    /* SINGLE INTEGRATION */
+    .single-integration-area {
+        padding: 35px;
+    }
+
+    /* BLOG PAGE */
+
+    .blog-p-area {
+        padding-top: 100px;
+    }
+
+    .blog-p-items {
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+    .blog-p-items .blog-item {
+        margin-bottom: 20px;
+    }
+
+    /* SINGLE BLOG PAGE */
+    .single-blog-details {
+        border: none;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .single-blog-content {
+        padding: 100px 0;
+    }
+
+    /* Pricing Package */
+    .package-table h2 {
+        font-size: 25px;
+    }
+
+    .package-table tr span {
+        font-size: 15px;
+    }
+
 }
 
 @media all and (max-width:768px) {
@@ -263,8 +338,52 @@
         font-size: 30px;
     }
 
+    .subscription-box form {
+        flex-direction: column;
+    }
+
+    .subscription-box input[type="email"] {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
     .table-pricing-btn {
         font-size: 15px;
+    }
+
+    .blog-item .blog-buttons .btn-2 {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    /* ABOUT PAGE */
+    .counter-area h3 {
+        font-size: 22px;
+    }
+
+    .footer-left .contact a,
+    .footer-menu .f-menu a {
+        font-size: 18px;
+    }
+
+    /* Pricing Package */
+
+    .table> :not(caption)>*>* {
+        font-size: 11px;
+    }
+
+    .package-table h2 {
+        font-size: 20px;
+    }
+
+    .package-table tr span {
+        font-size: 12px;
+    }
+
+
+    .package-table .btn-2 {
+        padding: 8px 10px;
+        font-size: 11px;
     }
 }
 
@@ -274,7 +393,7 @@
         line-height: 50px;
     }
 
-    h2{
+    h2 {
         font-size: 25px;
     }
 
@@ -292,7 +411,7 @@
     }
 
     .btn-2 {
-        padding: 12px 35px;
+        padding: 12px 30px;
         font-size: 15px;
     }
 

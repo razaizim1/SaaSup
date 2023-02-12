@@ -13,12 +13,16 @@ TweenMax.from(".logo",1, {
   ease: Expo.easeInOut
 });
 
-TweenMax.from(".menu-btn a",1, {
+TweenMax.fromTo(".menu-btn a",1, {
   opacity: 0,
-  x: -20,
-  ease: Expo.easeInOut,
-  delay: .6
-});
+  x: -40,
+  ease: Expo.easeIn,
+
+},({
+  opacity: 1,
+  x: 00,
+  delay: 1
+}));
 
 TweenMax.from(".banner-content ul li .video-btn",1,{
   opacity: 0,

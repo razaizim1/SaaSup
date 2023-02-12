@@ -48,7 +48,7 @@ img {
 }
 
 h1 {
-  font-size: 66px;
+  font-size: 65px;
   font-weight: 800;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   line-height: 83px;
@@ -94,14 +94,14 @@ p {
   padding: 20px 45px;
   font-size: 18px;
   font-weight: 700;
-  color: var(--primary-color2olor2);
-  background-color: var(--secondary-color4);
+  color: var(--secondary-color4);
+  background-color: var(--primary-color2);
   border-radius: 40px;
   transition: .5s;
 }
 
 .btn-1:hover {
-  background: var(--primary-color2);
+  background: var(--primary-color1);
   color: var(--secondary-color4);
 }
 
@@ -194,6 +194,20 @@ p {
   padding-top: 10px;
   max-width: 650px;
   margin: auto;
+}
+
+.fa-circle-check {
+  color: #31C65B;
+}
+
+.fa-circle-xmark {
+  color: #BEBEBE;
+}
+
+ol li::marker {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color2);
 }
 
 
@@ -409,6 +423,7 @@ header {
 .features-area .feature-item img {
   height: 250px;
   width: auto;
+  object-fit: contain;
 }
 
 .features-area .feature-item h3 {
@@ -435,45 +450,7 @@ header {
 #about {
   background: url('../images/about-bg2.svg') no-repeat right center / contain, url('../images/about-bg1.svg') no-repeat 11% center / contain;
   padding: 60px;
-  /* padding-top: 100px;
-  padding-bottom: 60px; */
 }
-
-/* 
-.about-content::after {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 850px;
-  background-color: #F1F1F1;
-  top: 0;
-  left: 80px;
-  border-radius: 40px;
-  z-index: -1;
-} */
-
-.about-content h2 {
-  padding-bottom: 18px;
-  max-width: 600px;
-}
-
-.about-content p {
-  padding-bottom: 10px;
-  max-width: 570px;
-}
-
-/* 
-.about-img::after {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 400px;
-  border-radius: 40px;
-  background-color: var(--primary-color1);
-  top: 0;
-  right: -50px;
-  z-index: -1;
-} */
 
 #about .about-content i {
   width: 96px;
@@ -899,7 +876,7 @@ header {
 /******* 6. Blog Area ********/
 /*****************************/
 
-#blog {
+.blog-section {
   margin-top: -73%;
 }
 
@@ -917,7 +894,7 @@ header {
 }
 
 .blog-item {
-  padding: 40px;
+  padding: 35px;
   background-color: var(--secondary-color1);
   border-radius: 40px;
   transition: all .5s;
@@ -1151,23 +1128,24 @@ header {
   background: url('../images/about/about-header.png') no-repeat scroll center center / cover;
 }
 
-.common-header-section .menu {
+/* .common-header-section .menu {
   background-color: var(--primary-color1);
-}
-
-.common-header-section .menu ul li a::before {
-  color: var(--primary-color2);
-}
-
-/* .common-header-section .menu ul li a,
-.common-header-section .menu ul li button {
-  color: var(--border-color);
 } */
 
-.common-header-section .menu ul li a:hover,
+/* .common-header-section .menu ul li a::before {
+  color: var(--primary-color2);
+} */
+
+/* .common-header-section .menu ul li a:hover,
 .common-header-section .menu ul li button:hover {
   color: var(--primary-color2);
-}
+} */
+
+/* .common-header-section .btn-1{
+  background: var(--primary-color1) ;
+  opacity: 1 !important;
+  color: var(--secondary-color4);
+} */
 
 .common-header-section .heading h2 {
   padding-bottom: 15px;
@@ -1275,6 +1253,7 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  margin-right: 15px;
 }
 
 .value-section .single-value .content p {
@@ -1305,7 +1284,7 @@ header {
   margin-top: 50px;
 }
 
-.career-section .list-item {
+.list-item {
   padding: 55px;
   border: 1px solid#CBCBCB;
   border-radius: 30px;
@@ -1566,4 +1545,441 @@ header {
 
 .single-integration-area .snapchat-btn {
   background: #F4F21F;
+}
+
+/* ************************************************
+****************** BLOG PAGE **********************
+************************************************ */
+
+.blog-page {
+  margin-top: 0;
+  padding: 70px 0;
+}
+
+.blog-p-items {
+  padding-bottom: 0px;
+  margin-top: 0;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.blog-p-area {
+  padding-top: 150px;
+}
+
+.single-blog-section {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.single-blog .single-blog-img img {
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.single-blog-wrap {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 100px;
+}
+
+.single-blog-details {
+  border-left: 1px solid var(--border-color);
+  padding-left: 40px;
+}
+
+.single-blog-details .blog-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.single-blog-details .blog-author img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.single-blog-details .blog-author h3,
+.single-blog-details .blog-author p {
+  margin-bottom: 0;
+}
+
+.single-blog-details .blog-author h3 {
+  font-size: 22px;
+  line-height: 83.4%;
+  margin-top: 15px;
+}
+
+.single-blog-details .button .btn-2 {
+  padding: 15px 40px;
+}
+
+.single-blog-content {
+  padding: 100px 200px;
+}
+
+.single-blog-content .text1 {
+  margin-bottom: 40px;
+}
+
+.single-blog-content .reseller-program {
+  margin-bottom: 50px;
+}
+
+.single-blog-content .reseller-program h2,
+.single-blog-content .work-performance h2 {
+  margin-bottom: 20px;
+}
+
+.single-blog-content h2 {
+  max-width: 100%;
+  font-size: 40px;
+}
+
+.single-blog-content .reseller-program strong {
+  color: var(--primary-color2);
+}
+
+.single-blog-content .reseller-program ol {
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.single-blog-content .reseller-program ol li {
+  margin: 30px 0;
+}
+
+.single-blog-content .reseller-program ol ::marker {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.single-blog-content .work-performance {
+  margin-bottom: 60px;
+}
+
+.single-blog-content .work-performance img {
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.single-blog-content .work-performance .text {
+  color: var(--primary-color1);
+}
+
+.single-blog-content .productivity-change h2 {
+  margin-bottom: 20px;
+}
+
+.single-blog-content .productivity-change ul {
+  list-style: disc;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+.single-blog-content .productivity-change .blog-quote {
+  background-color: var(--secondary-color1);
+  border-radius: 40px;
+  padding: 50px 100px;
+  border-left: 100px solid #5236ff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.single-blog-content .productivity-change .blog-quote i {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color4);
+  margin-left: -175px;
+  margin-right: 60px;
+}
+
+.single-blog-content .productivity-change .blog-quote p {
+  max-width: 605px;
+}
+
+.single-blog-content .favorite-productivity h2 {
+  margin-bottom: 20px;
+}
+
+/*****************************/
+/******** Post Area *********/
+/***************************/
+
+.single-blog-newsletter {
+  padding-bottom: 170px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.post-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* ************************************************
+***************** PRICING PAGE *******************
+************************************************ */
+
+.package-table-area {
+  padding-top: 170px;
+}
+
+.package-table-area .pricing-package-heading {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.package-table table {
+  display: block;
+  padding: 70px 50px;
+}
+
+.package-table table tr {
+  border-radius: 40px;
+}
+
+.package-table table tr th {
+  background-color: var(--secondary-color1);
+  padding: 20px 50px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.package-table table:nth-child(1) {
+  padding: 50px;
+}
+
+
+
+.table>:not(caption)>*>* {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.table-section {
+  background: var(--secondary-color1);
+  border-radius: 50px;
+}
+
+.package-table-area table tr:nth-child(even) {
+  background-color: var(--secondary-color4);
+}
+
+.package-table h2 {
+  font-size: 40px;
+}
+
+.package-table .btn-2 {
+  background: transparent;
+  border-color: var(--primary-color2);
+  color: var(--primary-color2);
+  padding: 8px 25px;
+  font-size: 15px;
+}
+
+.package-table .btn-2:hover {
+  background-color: var(--primary-color2);
+  color: var(--secondary-color4);
+}
+
+.pricing-header,
+.single-pricing-header {
+  padding-top: 170px;
+}
+
+.pricing-header .section-title p {
+  max-width: 610px;
+  margin: auto;
+}
+
+/*****************************/
+/****** Pricing Footer ******/
+/***************************/
+
+.pricing-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 170px;
+}
+
+/* ************************************************
+************* SINGLE PRICING PAGE *****************
+************************************************ */
+
+.single-pricing-plan h2 {
+  font-size: 75px;
+  margin-bottom: 10px;
+}
+
+.single-pricing-header .description {
+  margin-bottom: 50px;
+}
+
+.single-pricing-header ul li,
+.single-pricing-header ol li {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.single-pricing-plan ul {
+  border-bottom: 1px solid var(--border-color)
+}
+
+.single-pricing-plan ul li i {
+  margin-right: 25px;
+}
+
+.single-plan-duration {
+  padding: 50px 35px;
+  background: var(--secondary-color1);
+  border-radius: 30px;
+  margin-left: 100px;
+  flex: 0 0 calc(50% - 100px);
+}
+
+.single-plan-duration h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.single-plan-duration .price {
+  font-size: 75px;
+}
+
+.single-plan-duration span {
+  font-size: 20px;
+}
+
+.single-plan-duration p {
+  max-width: 430px;
+  margin-bottom: 30px;
+}
+
+.single-plan-duration select {
+  border-radius: 40px;
+  padding: 15px 25px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.single-plan-duration .form-select:focus {
+  border-color: var(--border-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+.single-plan-duration .btn-2 {
+  display: block;
+  max-width: 60%;
+  text-align: center;
+}
+
+.plan-choice {
+  margin-top: 20px;
+}
+
+.plan-choice h2 {
+  font-size: 40px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* ************************************************
+***************** CAREER PAGE *********************
+************************************************ */
+
+.values-wrapper{
+  margin-bottom: 30px;
+}
+
+.single-value {
+  padding: 40px;
+  border: 1px solid #F6F6F6;
+  box-shadow: 1px 15px 23px rgba(229, 229, 229, 0.25);
+  border-radius: 40px;
+}
+
+.single-value i {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.single-value .fa-user-clock{
+  color: #C555E1;
+  background: #EFADFF;
+}
+
+.single-value .fa-gift {
+  background: #FFDBB0;
+  color: #F0A041;
+}
+
+.single-value .fa-space-awesome {
+  background: #FFCACA;
+  color: #F16A6A;
+}
+
+.single-value .fa-jet-fighter-up {
+  background: #CAC2FF;
+  color: #5236FF;
+}
+
+.single-value .fa-clock {
+  background: #FFDBE6;
+  color: #FF6493;
+}
+
+.single-value .fa-file-circle-plus{
+  background: #33BFEB;
+  color: #B7EEFF;
+}
+
+/*****************************/
+/********* Job Area *********/
+/***************************/
+
+.values-section {
+  padding-bottom: 170px;
+}
+
+.single-job{
+  transition: all .5s;
+}
+
+.single-job span {
+  color: var(--primary-color1);
+}
+
+.single-job .btn-2{
+  background: var(--secondary-color4);
+  color: var(--primary-color2);
+  border-color: var(--primary-color2);
+}
+
+.single-job:hover{
+  background: var(--primary-color1);
+}
+
+.single-job:hover p,.single-job:hover h3{
+  color: var(--secondary-color4);
+}
+
+.single-job:hover span{
+  color: var(--primary-color2);
+}
+
+.single-job:hover .btn-2{
+  border-color: transparent;
 }
