@@ -26,13 +26,12 @@ TweenMax.fromTo(".menu-btn a",1, {
 
 TweenMax.from(".banner-content ul li .video-btn",1,{
   opacity: 0,
-  delay: 1,
   x: -200,
   ease: Expo.easeInOut
 })
 TweenMax.from(".banner-content ul li .btn-2",1,{
   opacity: 0,
-  delay: 2,
+  delay: 1,
   x: -200,
   ease: Elastic.easeOut.config(1,0.3)
 })

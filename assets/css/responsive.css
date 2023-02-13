@@ -300,6 +300,26 @@
         font-size: 20px;
     }
 
+/* ************************************************
+***************** CAREER PAGE *********************
+************************************************ */
+
+.single-career-content h2 {
+    font-size: 30px;
+}
+
+.about-role .heading {
+    flex-direction: column;
+}
+
+.single-career-content ul {
+    margin-left: 25px;
+}
+
+.single-career-content {
+    padding: 50px 20px;
+}
+
 
 }
 
