@@ -29,6 +29,9 @@
 </head>
 
 <body>
+  <!-- ANIMATION BOX -->
+  <div class="box"></div>
+  <div class="box2"></div>
   <!-- START HEADER SECTION -->
   <header class="header-section">
     <div class="header-area">
@@ -51,14 +54,16 @@
           <div class="col-lg-9 col-md-12">
             <div class="menus">
               <nav class="menu">
+                <div class="navbox"></div>
                 <ul class="d-flex align-items-center">
                   <li><a href="index.html" data-text="Home">Home</a></li>
                   <li><a href="about.html" data-text="About">About</a></li>
                   <li class="nav-item dropdown">
                     <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span
-                        data-text="Features">Features</span></button>
+                        data-text="Pages">Pages</span></button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="features.html" data-text="Features">Features</a></li>
+                      <li><a class="dropdown-item" href="pricing-page.html" data-text="Pricing">Pricing</a></li>
                       <li><a class=" dropdown-item" href="integration.html" data-text="Integration">Integration</a>
                       </li>
                       <li><a class="dropdown-item" href="blog.html" data-text="Blog">Blog</a></li>
@@ -67,12 +72,13 @@
                   </li>
                   <li class="nav-item dropdown">
                     <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span
-                        data-text="Pages">Pages</span></button>
+                        data-text="Features">Features</span></button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="pricing-page.html" data-text="Pricing">Pricing</a></li>
-                      <li><a class="dropdown-item" href="integration.html" data-text="Integration">Integration</a></li>
-                      <li><a class="dropdown-item" href="blog.html" data-text="Blog">Blog</a></li>
-                      <li><a class="dropdown-item" href="career.html" data-text="Career">Career</a></li>
+                      <li><a class="dropdown-item" href="contact.html" data-text="Contact">Contact</a></li>
+                      <li><a class="dropdown-item" href="changelog.html" data-text="Changelog">Changelog</a></li>
+                      <li><a class="dropdown-item" href="404.html" data-text="404">404</a></li>
+                      <li><a class="dropdown-item" href="password.html" data-text="Password">Password</a></li>
+                      <li><a class="dropdown-item" href="license.html" data-text="Licenses">Licenses</a></li>
                     </ul>
                   </li>
                   <li><a href="#cart" data-text="Cart">Cart<i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -80,27 +86,33 @@
               </nav>
               <div class="menu-btn home-btn">
                 <a class="btn-1" href="#">Sign in</a>
+                <div class="btn-box"></div>
               </div>
             </div>
           </div>
 
           <div class="row banner-area align-items-center">
-            <div class="col-lg-5 banner-content">
-              <h1>Build your audience and grow your brand</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit
-                interdum ullamcorper sed pharetra sene.</p>
-              <ul class="d-flex align-items-center">
-                <li><a class="btn-2" href="#">Get Started</a></li>
-                <li><a class="video-btn youtube-popup" href="https://www.youtube.com/watch?v=iCuUE4eRFns">Watch Video<i
-                      class="fa-solid fa-circle-play"></i></a></li>
-              </ul>
+            <div class="col-lg-6">
+              <div class="banner-content">
+                <h1> <span class="gsap-heading">Build</span> your audience and grow your brand</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit
+                  interdum ullamcorper sed pharetra sene.</p>
+                <ul class="d-flex align-items-center">
+                  <li><a class="btn-2" href="#">Get Started</a></li>
+                  <li><a class="video-btn youtube-popup" href="https://www.youtube.com/watch?v=iCuUE4eRFns">Watch
+                      Video<i class="fa-solid fa-circle-play"></i></a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-lg-7 banner-img">
-              <img src="assets/images/banner1.png" loading="lazy" alt="Banner Image">
+            <div class="col-lg-6">
+              <div class="banner-img home-banner">
+                <img src="assets/images/banner1.png" loading="lazy" alt="Banner Image">
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </header>
   <!-- START HEADER SECTION -->
 
@@ -477,7 +489,7 @@
           <h2>Start your free trail today</h2>
           <p>It is a long established fact that a reader will be by the readable when looking at it layout. </p>
           <div class="row subscription-box">
-            <form action="" method="POST">
+            <form action="#" method="POST">
               <input type="email" name="email" placeholder="your mail here...">
               <input class="btn-2" type="submit" value="Get Started">
             </form>
@@ -572,8 +584,8 @@
             <li>
               <i class='bx bx-phone-call'></i>
               <div class="contact d-flex flex-column">
-                <a href="tel:+987 6541 3654">+987 6541 3654</a>
-                <a href="tel:+001 6547 6589">+001 6547 6589</a>
+                <a href="tel:+98765413654">+987 6541 3654</a>
+                <a href="tel:+00165476589">+001 6547 6589</a>
               </div>
             </li>
           </ul>
@@ -595,12 +607,12 @@
             <h3>Utility Pages</h3>
 
             <ul>
-              <li><a href="#">Protected</a></li>
-              <li><a href="#">Password</a></li>
-              <li><a href="#">404 Not Found</a></li>
-              <li><a href="#">Style Guide</a></li>
-              <li><a href="#">Licenses</a></li>
-              <li><a href="#">Changelog</a></li>
+              <li><a href="password.html">Protected</a></li>
+              <li><a href="password.html">Password</a></li>
+              <li><a href="404.html">404 Not Found</a></li>
+              <li><a href="features.html">Style Guide</a></li>
+              <li><a href="license.html">Licenses</a></li>
+              <li><a href="changelog.html">Changelog</a></li>
             </ul>
           </div>
         </div>
@@ -639,20 +651,19 @@
   <footer>
     <!-- place footer here -->
   </footer>
-
   <!-- JavaScript Libraries -->
   <script src="assets/js/jquery-3.6.3.min.js"></script>
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
+  <script src="assets/js/waypoints..min.js"></script>
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/purecounter.vanila.js"></script>
+  <script src="assets/js/splitText.min.js"></script>
   <script src="assets/js/scripts.js"></script>
 </body>
 

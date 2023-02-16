@@ -28,6 +28,9 @@
 </head>
 
 <body>
+    <!-- ANIMATION BOX -->
+    <div class="box"></div>
+    <div class="box2"></div>
 
     <!-- START HEADER SECTION -->
     <header class="common-header-section">
@@ -51,32 +54,39 @@
                     <div class="col-lg-9 col-md-12">
                         <div class="menus">
                             <nav class="menu">
+                                <div class="navbox"></div>
                                 <ul class="d-flex align-items-center">
                                     <li><a href="index.html" data-text="Home">Home</a></li>
                                     <li><a href="about.html" data-text="About">About</a></li>
                                     <li class="nav-item dropdown">
                                         <button class="btn dropdown-toggle" data-bs-toggle="dropdown"
-                                            aria-expanded="false"><span data-text="Features">Features</span></button>
+                                            aria-expanded="false"><span data-text="Pages">Pages</span></button>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="features.html"
                                                     data-text="Features">Features</a></li>
+                                            <li><a class="dropdown-item" href="pricing-page.html"
+                                                    data-text="Pricing">Pricing</a></li>
                                             <li><a class=" dropdown-item" href="integration.html"
                                                     data-text="Integration">Integration</a>
                                             </li>
                                             <li><a class="dropdown-item" href="blog.html" data-text="Blog">Blog</a></li>
-                                            <li><a class="dropdown-item" href="#" data-text="Career">Career</a></li>
+                                            <li><a class="dropdown-item" href="career.html"
+                                                    data-text="Career">Career</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <button class="btn dropdown-toggle" data-bs-toggle="dropdown"
-                                            aria-expanded="false"><span data-text="Pages">Pages</span></button>
+                                            aria-expanded="false"><span data-text="Features">Features</span></button>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="pricing-page.html"
-                                                    data-text="Pricing">Pricing</a></li>
-                                            <li><a class="dropdown-item" href="integration.html"
-                                                    data-text="Integration">Integration</a></li>
-                                            <li><a class="dropdown-item" href="blog.html" data-text="Blog">Blog</a></li>
-                                            <li><a class="dropdown-item" href="career.html" data-text="Career">Career</a></li>
+                                            <li><a class="dropdown-item" href="contact.html"
+                                                    data-text="Contact">Contact</a></li>
+                                            <li><a class="dropdown-item" href="changelog.html"
+                                                    data-text="Changelog">Changelog</a></li>
+                                            <li><a class="dropdown-item" href="404.html" data-text="404">404</a></li>
+                                            <li><a class="dropdown-item" href="password.html"
+                                                    data-text="Password">Password</a></li>
+                                            <li><a class="dropdown-item" href="license.html"
+                                                    data-text="Licenses">Licenses</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#cart" data-text="Cart">Cart<i
@@ -85,6 +95,7 @@
                             </nav>
                             <div class="menu-btn">
                                 <a class="btn-1" href="#">Sign in</a>
+                                <div class="btn-box"></div>
                             </div>
                         </div>
                     </div>
@@ -96,7 +107,7 @@
                     <div class="row banner-area">
                         <div class="col-lg-12">
                             <div class="heading text-center">
-                                <h1>Integrations</h1>
+                                <h1 class="gsap-heading">Integrations</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit
                                     interdum ullamcorper sed pharetra sene.</p>
                             </div>
@@ -294,12 +305,12 @@
                         <h3>Utility Pages</h3>
 
                         <ul>
-                            <li><a href="#">Protected</a></li>
-                            <li><a href="#">Password</a></li>
-                            <li><a href="#">404 Not Found</a></li>
-                            <li><a href="#">Style Guide</a></li>
-                            <li><a href="#">Licenses</a></li>
-                            <li><a href="#">Changelog</a></li>
+                            <li><a href="password.html">Protected</a></li>
+                            <li><a href="password.html">Password</a></li>
+                            <li><a href="404.html">404 Not Found</a></li>
+                            <li><a href="features.html">Style Guide</a></li>
+                            <li><a href="license.html">Licenses</a></li>
+                            <li><a href="changelog.html">Changelog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -336,8 +347,12 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="assets/js/waypoints..min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/purecounter.vanila.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 
